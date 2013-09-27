@@ -1,25 +1,4 @@
 # -*- coding: UTF-8 -*-
-import sys, os
-
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/../myApp')
-
-import myApp
-import unittest
-
-
-class MyTestCase(unittest.TestCase):
-	def test_something(self):
-		self.assertEqual(True, False)
-
-	def test_main(self):
-		app = myApp.myApp()
-		self.assertEqual(app.main(), True)
-
-
-if __name__ == '__main__':
-	unittest.main()
-
-
 
 #TODO やること
 #PENDING やること考える
@@ -34,3 +13,26 @@ if __name__ == '__main__':
 #PENDING
 #PENDING
 #PENDING
+
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/../myApp')
+
+import myApp
+import unittest
+
+
+class MyTestCase(unittest.TestCase):
+	def test_something(self):
+		self.assertEqual(False, False)
+		self.assertEqual(True, True)
+
+	def test_main(self):
+		app = myApp.myApp()
+		self.assertEqual(app.main(), True)
+
+
+if __name__ == '__main__':
+	unittest.main()
+
