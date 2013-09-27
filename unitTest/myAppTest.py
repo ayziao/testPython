@@ -28,8 +28,10 @@ import os
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/../myApp')
 
-import myApp
 import unittest
+#import MyApp
+from MyApp import MyApp
+
 
 class MyTestCase(unittest.TestCase):
 	def test_something(self):
@@ -37,9 +39,23 @@ class MyTestCase(unittest.TestCase):
 		self.assertEqual(True, True)
 
 	def test_main(self):
-		app = myApp.myApp()
-		self.assertEqual(app.main(), True)
+		app = MyApp()
+		f = app.main
+		f()
 
+		self.assertEqual(app.main(), True)
+		self.assertEqual(MyApp.main(), True)
+
+
+import pprint
+
+a = {}
+a['a'] = 2
+m = a.get('b')
+pprint.pprint(a)
+
+#pprint.pprint(globals())
+#pprint.pprint(locals())
 
 if __name__ == '__main__':
 	unittest.main()
