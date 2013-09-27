@@ -8,9 +8,7 @@
 #PENDING	全体的な進め方
 #PENDING	準備
 #PENDING		Python3調べる
-#PENDING		コーディング規約調べる
 #PENDING		webサーバどうにかする
-#PENDING		ディレクトリ構成
 #PENDING		ストレージ検討 KVS RDB
 #PENDING		プラグインディレクトリ構成
 #PENDING		TwitterAPI関連調べる
