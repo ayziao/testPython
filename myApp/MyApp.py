@@ -1,5 +1,3 @@
-# -*- coding: UTF-8 -*-
-
 
 class MyApp:
 	"""
@@ -15,7 +13,7 @@ class MyApp:
 		"""
 		hogehoge
 		"""
-		print 'main'
+		print('main')
 		return True
 
 

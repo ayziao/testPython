@@ -1,5 +1,3 @@
-# -*- coding: UTF-8 -*-
-
 #タスク書き方
 #TODO やること
 #PENDING 考えること
@@ -27,8 +25,8 @@ import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/../myApp')
 
 import unittest
-#import MyApp
-from MyApp import MyApp
+import MyApp
+#from MyApp import MyApp
 
 
 class MyTestCase(unittest.TestCase):
@@ -37,12 +35,13 @@ class MyTestCase(unittest.TestCase):
 		self.assertEqual(True, True)
 
 	def test_main(self):
-		app = MyApp()
+		app = MyApp.MyApp()
 		f = app.main
 		f()
 
 		self.assertEqual(app.main(), True)
-		self.assertEqual(MyApp.main(), True)
+
+	#		self.assertEqual(MyApp.main(), True)
 
 
 import pprint
