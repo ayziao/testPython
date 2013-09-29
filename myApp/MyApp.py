@@ -1,7 +1,7 @@
 
 class MyApp:
 	"""
-		オレオレアプリ
+	#	オレオレアプリ
 	"""
 
 	def __init__(self):
@@ -11,7 +11,7 @@ class MyApp:
 	@classmethod
 	def main(cls):
 		"""
-		hogehoge
+		# hogehoge
 		"""
 		print('main')
 		return True
