@@ -12,8 +12,8 @@ if __name__ == '__main__':
 	n = None
 	pprint(a)
 	pprint(globals())
-	pprint(locals())
+  # pprint(locals())
 
-	pprint(dir())
+  pprint(dir())
 
 	pprint(sys.path)
