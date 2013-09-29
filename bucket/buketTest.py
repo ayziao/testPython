@@ -1,5 +1,5 @@
 import unittest
-import bucket3.hoge
+import bucket.hoge
 
 
 class MyTestCase(unittest.TestCase):
@@ -8,7 +8,7 @@ class MyTestCase(unittest.TestCase):
 		self.assertEqual(False, False)
 
 	def test_piyo(self):
-		self.assertEqual(bucket3.hoge.piyo(), 'piyo')
+		self.assertEqual(bucket.hoge.piyo(), 'piyo')
 
 
 if __name__ == '__main__':

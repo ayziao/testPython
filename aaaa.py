@@ -1,6 +1,6 @@
-import bucket3.hoge
+import bucket.hoge
 
-bucket3.hoge.piyo()
+bucket.hoge.piyo()
 
 exit()
 import bbbb
