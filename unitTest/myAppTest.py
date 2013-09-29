@@ -5,7 +5,6 @@
 #タスク
 #PENDING	全体的な進め方
 #PENDING	準備
-#PENDING		Python3調べる
 #PENDING		webサーバどうにかする
 #PENDING		ストレージ検討 KVS RDB
 #PENDING		プラグインディレクトリ構成
@@ -30,16 +29,16 @@ import MyApp
 
 
 class MyTestCase(unittest.TestCase):
-	def test_something(self):
-		self.assertEqual(False, False)
-		self.assertEqual(True, True)
+  def test_something(self):
+    self.assertEqual(False, False)
+    self.assertEqual(True, True)
 
-	def test_main(self):
-		app = MyApp.MyApp()
-		f = app.main
-		f()
+  def test_main(self):
+    app = MyApp.MyApp()
+    f = app.main
+    f()
 
-		self.assertEqual(app.main(), True)
+    self.assertEqual(app.main(), True)
 
-	#		self.assertEqual(MyApp.main(), True)
+    #		self.assertEqual(MyApp.main(), True)
 
